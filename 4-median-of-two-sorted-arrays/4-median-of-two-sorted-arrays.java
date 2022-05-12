@@ -2,7 +2,6 @@ import java.util.*;
 class Solution {
     static public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m, n,c=0, i,j, a[], term=0;
-            double medi=0.0;
         m=nums1.length;
         n=nums2.length;
         c=m+n;
@@ -18,8 +17,7 @@ class Solution {
         else
         {
             term=c/2;
-            medi=(double)(a[term-1]+a[term])/2;
-            return medi;
+            return((double)(a[term-1]+a[term])/2);
         }  
     }
     public static void main(String[]args)
